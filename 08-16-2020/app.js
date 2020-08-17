@@ -1,3 +1,8 @@
+//IIFE
+(function() {
+    console.log('Welcome!');
+}());
+
 const koseiWheels = {
     name : 'Kosei',
     price : 500,
@@ -28,7 +33,7 @@ const subaruWheels = {
 const productStock = new Array(koseiWheels, volkWheels, subaruWheels);
 
 let list =  `<ul>`;
-
+ 
 for(var i = 0 ; i < productStock.length ; i++){
     list += `<li>Product: ${productStock[i].name}</li>`;
     list += `<li>Price: ${productStock[i].price}</li>`;
