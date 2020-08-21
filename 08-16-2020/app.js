@@ -31,20 +31,29 @@ const subaruWheels = {
 };
 
 const productStock = new Array(koseiWheels, volkWheels, subaruWheels);
+const tyres = ['225/45/17', '215/45/17', '235/35/18'];
 
-let list =  `<ul>`;
- 
-for(var i = 0 ; i < productStock.length ; i++){
-    list += `<li>Product: ${productStock[i].name}</li>`;
-    list += `<li>Price: ${productStock[i].price}</li>`;
-    list += `<li>Specs: ${productStock[i].specs.et} et, ${productStock[i].specs.width} inches width.</li>`;
+
+let wheelList =  `<ul>`;
+//Iterating them with forEach
+productStock.forEach(function(product){
+    wheelList += `<li>Product: ${product.name}</li>`;
+    wheelList += `<li>Price: ${product.price}</li>`;
+    wheelList += `<li>Specs: ${product.specs.et} et, ${product.specs.width} inches width.</li>`;
+});
+wheelList += `</ul>`
+
+let tyreList =  `<ul>`;
+//Iterating them with of values
+for(let tyre of tyres.values()){
+    tyreList += `<li>Tyre Size: ${tyre}</li>`;
 }
-
-list += `</ul>`
+tyreList += `</ul>`
 
 
 function total(number1, number2){
     return number1 + number2;
 }
 
-document.getElementById('app').innerHTML = list;
+document.getElementById('wheels').innerHTML = wheelList;
+document.getElementById('tyres').innerHTML = tyreList;
