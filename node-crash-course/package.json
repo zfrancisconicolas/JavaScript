@@ -1,0 +1,26 @@
+{
+  "name": "crash-course",
+  "version": "1.0.0",
+  "description": "learning to work with node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfrancisconicolas/node-crash-course.git"
+  },
+  "author": "Francisco N. Zanotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zfrancisconicolas/node-crash-course/issues"
+  },
+  "homepage": "https://github.com/zfrancisconicolas/node-crash-course#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
