@@ -3,3 +3,4 @@
 # For useful gitignore templates see: https://github.com/github/gitignore
 
 /node-crash-course/node_modules
+/js-api/node_modules
